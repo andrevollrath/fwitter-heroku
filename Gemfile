@@ -6,7 +6,8 @@ gem 'activerecord', :require => 'active_record'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'rake'
 gem 'require_all'
-gem 'thin'
+#gem 'thin'
+gem 'pg'
 gem 'bcrypt'
 
 group :test do
@@ -20,10 +21,5 @@ end
 group :development do
  gem 'pry' 
  gem 'shotgun'
- gem 'sqlite3'
  gem "tux"
-end
-
-group :production do
- gem 'pg'
 end
